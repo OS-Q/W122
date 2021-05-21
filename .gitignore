@@ -1,0 +1,20 @@
+*.db
+*.pyc
+__pycache__/
+*.vscode/
+*.pio/
+*.rst
+# *.md
+**/*/README*
+LICENSE*
+*.png
+*.jpg
+**/CONTR*
+**/CHANGE*
+obj
+*lst
+*bak
+*plg
+*m51
+*uvgui*
+*uvop*
