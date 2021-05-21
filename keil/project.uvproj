@@ -45,14 +45,14 @@
             <NotGenerated>0</NotGenerated>
             <InvalidFlash>1</InvalidFlash>
           </TargetStatus>
-          <OutputDirectory>..\obj\</OutputDirectory>
+          <OutputDirectory>.\obj\</OutputDirectory>
           <OutputName>simpleBMS</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
           <CreateHexFile>1</CreateHexFile>
           <DebugInformation>1</DebugInformation>
           <BrowseInformation>1</BrowseInformation>
-          <ListingPath>.\</ListingPath>
+          <ListingPath>.\obj\</ListingPath>
           <HexFormatSelection>0</HexFormatSelection>
           <Merge32K>0</Merge32K>
           <CreateBatchFile>0</CreateBatchFile>
@@ -79,7 +79,7 @@
           <AfterMake>
             <RunUserProg1>1</RunUserProg1>
             <RunUserProg2>0</RunUserProg2>
-            <UserProg1Name>..\obj\hex2bin.exe ..\obj\simpleBMS.hex</UserProg1Name>
+            <UserProg1Name>.\hex2bin.exe .\obj\simpleBMS.hex</UserProg1Name>
             <UserProg2Name></UserProg2Name>
             <UserProg1Dos16Mode>0</UserProg1Dos16Mode>
             <UserProg2Dos16Mode>0</UserProg2Dos16Mode>
@@ -374,42 +374,72 @@
       </TargetOption>
       <Groups>
         <Group>
+          <GroupName>user</GroupName>
+          <Files>
+            <File>
+              <FileName>button.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\user\button.c</FilePath>
+            </File>
+            <File>
+              <FileName>led.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\user\led.c</FilePath>
+            </File>
+            <File>
+              <FileName>bms.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\user\bms.c</FilePath>
+            </File>
+            <File>
+              <FileName>system.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\user\system.c</FilePath>
+            </File>
+            <File>
+              <FileName>console.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\user\console.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
           <GroupName>hal</GroupName>
           <Files>
             <File>
               <FileName>hal_clk.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\mcu\hal_clk.c</FilePath>
+              <FilePath>..\mcu\hal_clk.c</FilePath>
             </File>
             <File>
               <FileName>hal_core.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\mcu\hal_core.c</FilePath>
+              <FilePath>..\mcu\hal_core.c</FilePath>
             </File>
             <File>
               <FileName>hal_gpio.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\mcu\hal_gpio.c</FilePath>
+              <FilePath>..\mcu\hal_gpio.c</FilePath>
             </File>
             <File>
               <FileName>hal_uart.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\mcu\hal_uart.c</FilePath>
+              <FilePath>..\mcu\hal_uart.c</FilePath>
             </File>
             <File>
               <FileName>hal_wtd.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\mcu\hal_wtd.c</FilePath>
+              <FilePath>..\mcu\hal_wtd.c</FilePath>
             </File>
             <File>
               <FileName>hal_adc.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\mcu\hal_adc.c</FilePath>
+              <FilePath>..\mcu\hal_adc.c</FilePath>
             </File>
             <File>
               <FileName>hal_timer.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\mcu\hal_timer.c</FilePath>
+              <FilePath>..\mcu\hal_timer.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -419,12 +449,12 @@
             <File>
               <FileName>Conf_tny.A51</FileName>
               <FileType>2</FileType>
-              <FilePath>..\..\common\Conf_tny.A51</FilePath>
+              <FilePath>..\common\Conf_tny.A51</FilePath>
             </File>
             <File>
               <FileName>ring_buffer.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\common\ring_buffer.c</FilePath>
+              <FilePath>..\common\ring_buffer.c</FilePath>
               <FileOption>
                 <CommonProperty>
                   <UseCPPCompiler>2</UseCPPCompiler>
@@ -470,37 +500,7 @@
             <File>
               <FileName>msg.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\common\msg.c</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>user</GroupName>
-          <Files>
-            <File>
-              <FileName>button.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\user\button.c</FilePath>
-            </File>
-            <File>
-              <FileName>led.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\user\led.c</FilePath>
-            </File>
-            <File>
-              <FileName>bms.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\user\bms.c</FilePath>
-            </File>
-            <File>
-              <FileName>system.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\user\system.c</FilePath>
-            </File>
-            <File>
-              <FileName>console.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\user\console.c</FilePath>
+              <FilePath>..\common\msg.c</FilePath>
             </File>
           </Files>
         </Group>
